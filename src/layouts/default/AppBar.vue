@@ -1,14 +1,12 @@
 <template>
-  <v-app-bar scroll-behavior="elevate" style="height: 85px;">
-    <v-spacer>
-      <v-app-bar-title style="font-size: 30px">Title</v-app-bar-title>
-      <template v-slot:append>
-        <v-btn icon="mdi-heart"></v-btn>
-        <v-btn icon="mdi-magnify"></v-btn>
-        <v-btn icon="mdi-dots-vertical"></v-btn>
-      </template>
-    </v-spacer>
-  </v-app-bar>
+    <v-app-bar color="white" elevate-on-scroll>
+      <v-spacer></v-spacer>
+      <v-btn text href="#home" class="mx-5">Home</v-btn>
+      <v-btn text href="#about" class="mx-5">About</v-btn>
+      <v-btn text href="#work" class="mx-5">Work</v-btn>
+      <v-btn text href="#contact" class="mx-5">Contact</v-btn>
+      <v-spacer></v-spacer>
+    </v-app-bar>
 </template>
 
 <script setup>
