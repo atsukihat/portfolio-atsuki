@@ -1,15 +1,20 @@
 <template>
   <v-app-bar color="white" elevation="0">
     <v-spacer></v-spacer>
-    <router-link to="#home" class="mx-5" active-class="active-link">Home</router-link>
-    <router-link to="#about" class="mx-5" active-class="active-link">About</router-link>
-    <router-link to="#work" class="mx-5" active-class="active-link">Work</router-link>
-    <router-link to="#contact" class="mx-5" active-class="active-link">Contact</router-link>
+    <a href="#home" @click.="goToSection('home')" class="mx-5">Home</a>
+    <a href="#about" @click.prevent="goToSection('about')" class="mx-5">About</a>
+    <a href="#work" @click.prevent="goToSection('work')" class="mx-5">Work</a>
+    <a href="#contact" @click.prevent="goToSection('contact')" class="mx-5">Contact</a>
     <v-spacer></v-spacer>
   </v-app-bar>
 </template>
 
 
 <script setup>
-//
 </script>
+
+<style>
+.active-link {
+  /* スタイル定義 */
+}
+</style>

@@ -10,5 +10,4 @@
   import AboutPage from '@/components/About/AboutPage.vue'
   import WorkPage from '@/components/Work/WorkPage.vue'
   import ContactPage from '@/components/Contact/ContactPage.vue'
-  //contactだと名前空間が重複するのでContactsに変更
 </script>
