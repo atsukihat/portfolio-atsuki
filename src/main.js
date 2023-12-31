@@ -12,8 +12,10 @@ import App from './App.vue'
 
 // Composables
 import { createApp } from 'vue'
+import VueSmoothScroll from 'vue3-smooth-scroll'
 
 const app = createApp(App)
+app.use(VueSmoothScroll)
 
 registerPlugins(app)
 
