@@ -3,8 +3,9 @@
     <v-responsive class="align-center text-center fill-height">
       <v-col name="fade" appear>
         <p class="animated-text name-font">ATSUKI&numsp;HATTORI</p>
-        <p class="animated-text occupation-font text-grey">ENGINNER</p>
+        <p class="animated-text occupation-font text-grey-darken-1">ENGINNER</p>
       </v-col>
+      <v-btn class="my-16" color="white" icon="mdi mdi-arrow-down" size="large"></v-btn>
     </v-responsive>
   </v-container>
 </template>
