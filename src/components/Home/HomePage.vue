@@ -2,7 +2,7 @@
   <v-container id="home" class="fill-height">
     <v-responsive class="align-center text-center fill-height">
       <v-col name="fade" appear>
-        <h2 class="text-h2 mb-4 animated-text">ATSUKI&numsp;HATTORI</h2>
+        <h3 class="text-h3 mb-1 animated-text">ATSUKI&numsp;HATTORI</h3>
         <p class="animated-text text-grey">ENGINNER</p>
       </v-col>
     </v-responsive>
