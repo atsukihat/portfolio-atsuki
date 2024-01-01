@@ -10,6 +10,8 @@ import { registerPlugins } from '@/plugins'
 // Components
 import App from './App.vue'
 
+import './assets/font.css'
+
 // Composables
 import { createApp } from 'vue'
 import VueSmoothScroll from 'vue3-smooth-scroll'

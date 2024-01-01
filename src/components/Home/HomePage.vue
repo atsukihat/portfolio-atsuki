@@ -2,8 +2,8 @@
   <v-container id="home" class="fill-height">
     <v-responsive class="align-center text-center fill-height">
       <v-col name="fade" appear>
-        <h3 class="text-h3 mb-1 animated-text">ATSUKI&numsp;HATTORI</h3>
-        <p class="animated-text text-grey">ENGINNER</p>
+        <p class="animated-text name-font">ATSUKI&numsp;HATTORI</p>
+        <p class="animated-text occupation-font text-grey">ENGINNER</p>
       </v-col>
     </v-responsive>
   </v-container>
@@ -35,5 +35,14 @@
 }
 .fade-enter {
   opacity: 0;
+}
+
+.name-font {
+  font-family: 'Cormorant';
+  font-size: 3rem;
+}
+.occupation-font {
+  font-family: 'Cormorant';
+  font-size: 2rex;
 }
 </style>
