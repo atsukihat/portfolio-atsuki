@@ -10,3 +10,9 @@
   import DefaultBar from './AppBar.vue'
   import DefaultView from './View.vue'
 </script>
+
+<style>
+.cormorant-font {
+  font-family: 'Cormorant';
+}
+</style>

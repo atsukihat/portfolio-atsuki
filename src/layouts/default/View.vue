@@ -7,9 +7,3 @@
 <script setup>
   //
 </script>
-
-<style>
-.cormorant-font {
-  font-family: 'Cormorant';
-}
-</style>

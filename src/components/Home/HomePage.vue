@@ -1,6 +1,6 @@
 <template>
   <v-container id="home" class="fill-height">
-    <v-row justify="center" align="center" class="fill-height">
+    <v-row justify="center" align="center">
       <v-col class="text-center">
         <p class="name-font text-white">Hello world</p>
         <p class="animated-text name-size cormorant-font">ATSUKI&numsp;HATTORI</p>
@@ -54,7 +54,7 @@
 }
 
 .name-size {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .occupation-size {
   font-size: 2rex;

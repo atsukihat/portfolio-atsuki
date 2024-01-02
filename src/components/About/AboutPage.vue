@@ -1,9 +1,12 @@
 <template>
-    <v-container id="about" fluid fill-height class="bg-light-blue-lighten-5">
-        <p class="text-h3">About me</p>
-        <p>aaa</p>
+  <v-container fluid class="fill-height bg-grey-lighten-5">
+    <v-container id="about" class="fill-height">
+      <v-row justify="center" align="center">
+        <p class="cormorant-font">About me</p>
+      </v-row>
     </v-container>
-  </template>
+  </v-container>
+</template>
 
   <script setup>
     //

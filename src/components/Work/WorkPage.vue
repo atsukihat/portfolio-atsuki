@@ -1,10 +1,10 @@
 <template>
-  <v-container id="work" class="fill-height">
-    <v-responsive class="align-center text-center fill-height">
-
-      <h2 class="text-h3">仕事情報だお</h2>
-
-    </v-responsive>
+  <v-container fluid class="fill-height bg-grey-lighten-4">
+    <v-container id="work" class="fill-height">
+      <v-row justify="center" align="center">
+        <p class="cormorant-font text-h3">work</p>
+      </v-row>
+    </v-container>
   </v-container>
 </template>
 
