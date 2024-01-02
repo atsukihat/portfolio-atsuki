@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar color="white" elevation="0" scroll-behavior="inverted hide" scroll-threshold="800">
+  <v-app-bar color="white" elevation="1" scroll-behavior="inverted hide" scroll-threshold="800">
     <v-spacer></v-spacer>
         <v-hover v-slot:default="{ isHovering, props }">
           <v-btn href="#about" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="mx-3" variant="text" size="small">About</v-btn>

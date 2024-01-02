@@ -1,10 +1,8 @@
 <template>
-    <v-content id="about" class="fill-height bg-red">
-      <v-container class="align-center text-center fill-height">
-        <h2 class="text-h3">自己紹介だお</h2>
+    <v-container id="about" fluid fill-height class="bg-light-blue-lighten-5">
+        <p class="text-h3">About me</p>
         <p>aaa</p>
-      </v-container>
-    </v-content>
+    </v-container>
   </template>
 
   <script setup>

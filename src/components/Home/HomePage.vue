@@ -3,8 +3,8 @@
     <v-row justify="center" align="center" class="fill-height">
       <v-col class="text-center">
         <p class="name-font text-white">Hello world</p>
-        <p class="animated-text name-font">ATSUKI&numsp;HATTORI</p>
-        <p class="animated-text occupation-font text-grey-darken-1 mb-16">ENGINEER</p>
+        <p class="animated-text name-size cormorant-font">ATSUKI&numsp;HATTORI</p>
+        <p class="animated-text occupation-size cormorant-font text-grey-darken-1 mb-16">ENGINEER</p>
         <v-btn href="#about" v-smooth-scroll="{ duration: 1500}" class="animated-btn mt-16" color="white" icon="mdi mdi-arrow-down" size="x-large" elevation="2"></v-btn>
       </v-col>
     </v-row>
@@ -53,12 +53,11 @@
   animation: popUp 1.5s ease-in-out 1.0s forwards;
 }
 
-.name-font {
-  font-family: 'Cormorant';
+.name-size {
   font-size: 3rem;
 }
-.occupation-font {
-  font-family: 'Cormorant';
+.occupation-size {
   font-size: 2rex;
 }
+
 </style>
