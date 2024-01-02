@@ -6,8 +6,8 @@
 </template>
 
 <script setup>
-  import HomePage from '@/components/Home/HomePage.vue'
-  import AboutPage from '@/components/About/AboutPage.vue'
-  import WorkPage from '@/components/Work/WorkPage.vue'
-  import ContactPage from '@/components/Contact/ContactPage.vue'
+  import HomePage from '@/components/HomePage.vue'
+  import AboutPage from '@/components/AboutPage.vue'
+  import WorkPage from '@/components/WorkPage.vue'
+  import ContactPage from '@/components/ContactPage.vue'
 </script>
