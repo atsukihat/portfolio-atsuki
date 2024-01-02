@@ -16,3 +16,9 @@
   font-family: 'Cormorant';
 }
 </style>
+
+<style>
+.japanese-font {
+  font-family: 'Noto Serif Japanese';
+}
+</style>

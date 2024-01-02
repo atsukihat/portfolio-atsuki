@@ -5,3 +5,10 @@
   font-display: swap;
   src: url('@/assets/fonts/Cormorant-VariableFont_wght.ttf') format('woff');
 }
+@font-face {
+  font-family: 'Noto Serif Japanese';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('@/assets/fonts/NotoSerifJP-Regular.ttf') format('woff');
+}
