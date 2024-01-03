@@ -52,12 +52,4 @@
   opacity: 0;
   animation: popUp 1.5s ease-in-out 1.0s forwards;
 }
-
-.name-size {
-  font-size: 2.5rem;
-}
-.occupation-size {
-  font-size: 2rex;
-}
-
 </style>
