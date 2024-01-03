@@ -5,7 +5,7 @@
           <v-btn href="#about" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="cormorant-font mr-5" variant="text" size="small">About</v-btn>
         </v-hover>
         <v-hover v-slot:default="{ isHovering, props }">
-          <v-btn href="#works" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="cormorant-font mr-5" variant="text" size="small">Works</v-btn>
+          <v-btn href="#work" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="cormorant-font mr-5" variant="text" size="small">Works</v-btn>
         </v-hover>
         <v-hover v-slot:default="{ isHovering, props }">
           <v-btn href="#skill" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="cormorant-font mr-5" variant="text" size="small">Skills</v-btn>
