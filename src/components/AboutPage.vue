@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid  id=about class="bg-grey-lighten-5">
+  <v-container fluid  id=about class="bg-red">
     <v-row >
       <v-col cols="12" class="text-center">
         <p class="vibes-font title-size">About me</p>

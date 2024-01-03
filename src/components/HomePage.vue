@@ -1,11 +1,10 @@
 <template>
-  <v-container id="home" class="fill-height">
+  <v-container id="home">
     <v-row justify="center" align="center">
       <v-col class="text-center">
-        <p class="name-font text-white">Hello world</p>
-        <p class="animated-text name-size cormorant-font">ATSUKI&numsp;HATTORI</p>
+        <p class="animated-text name-size cormorant-font"  style="margin-top: 330px;">ATSUKI&numsp;HATTORI</p>
         <p class="animated-text occupation-size cormorant-font text-grey-darken-1 mb-16">ENGINEER</p>
-        <v-btn href="#about" v-smooth-scroll="{ duration: 1500}" class="animated-btn mt-16" color="white" icon="mdi mdi-arrow-down" size="x-large" elevation="2"></v-btn>
+        <v-btn href="#about" v-smooth-scroll="{ duration: 1500}" class="animated-btn mt-16" color="white" icon="mdi mdi-arrow-down" size="x-large" elevation="2" style="margin-bottom: 240px;"></v-btn>
       </v-col>
     </v-row>
   </v-container>

@@ -1,8 +1,8 @@
 <template>
-  <v-container fluid class="fill-height bg-grey-lighten-3">
+  <v-container fluid class="bg-grey-lighten-3 fill-height">
     <v-container id="contact" class="fill-height">
       <v-row justify="center" align="center">
-        <p class="cormorant-font">Contact me</p>
+        <p class="vibes-font title-size">Contact me</p>
       </v-row>
     </v-container>
   </v-container>
