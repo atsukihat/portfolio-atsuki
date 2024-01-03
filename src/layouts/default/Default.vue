@@ -15,10 +15,10 @@
 .cormorant-font {
   font-family: 'Cormorant';
 }
-</style>
-
-<style>
 .japanese-font {
   font-family: 'Noto Serif Japanese';
+}
+.vibes-font {
+  font-family: 'Great Vibes';
 }
 </style>
