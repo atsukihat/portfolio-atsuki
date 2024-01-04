@@ -18,7 +18,6 @@
               <p>広大の学生のための授業レビューサイトです．サービスの提案からシステム開発，ビジコンに参加して資金集めを行いました．</p>
             </v-col>
           </v-row>
-          <v-divider :thickness="2"></v-divider>
           <!-- 使用言語の見出し -->
           <v-row>
             <v-col class="text-center">
@@ -40,15 +39,22 @@
           <v-row>
             <v-spacer></v-spacer>
             <v-col>
-              <v-card @click="updateSelectedImage(kaedeImage)">
-                <v-img :src="kaedeImage"></v-img>
-              </v-card>
+              <v-hover v-slot:default="{ isHovering, props }">
+                <v-card
+                  :elevation="selectedImage === kaedeImage ? 16 : (isHovering ? 2 : 16)"
+                  @click="updateSelectedImage(kaedeImage)"
+                  v-bind="props"
+                >
+                  <v-img :src="kaedeImage"></v-img>
+                </v-card>
+              </v-hover>
             </v-col>
             <v-col>
               <v-card @click="updateSelectedImage(logoImage)">
                 <v-img :src="logoImage"></v-img>
               </v-card>
             </v-col>
+
             <v-col>
               <v-card @click="updateSelectedImage(higashiImage)">
                 <v-img :src="higashiImage"></v-img>
@@ -76,11 +82,19 @@ import kaedeImage from '@/assets/kaede.jpg'
 import logoImage from '@/assets/logo.png'
 import higashiImage from '@/assets/Higashi.jpg'
 
+const images = [
+  { id: 'kaede', image: kaedeImage },
+  { id: 'logo', image: logoImage },
+  { id: 'higashi', image: higashiImage }
+]
 
-const selectedImage = ref(kaedeImage);
+const selectedImage = ref(kaedeImage)
+const selected = ref('kaede')
 
-const updateSelectedImage = (imageUrl) => {
+
+const updateSelectedImage = (imageUrl, imageId) => {
   selectedImage.value = imageUrl
+  selected.value = imageId
 }
 
 const props = defineProps({

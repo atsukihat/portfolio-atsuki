@@ -1,6 +1,6 @@
 <template>
   <div class="text-center">
-    <v-hover v-slot:default="{ isHovering, props }" open-delay="50">
+    <v-hover v-slot:default="{ isHovering, props }" open-delay="100">
       <v-card
         :elevation="isHovering ? 16 : 2"
         @click="dialog = true"
