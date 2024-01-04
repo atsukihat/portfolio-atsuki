@@ -15,7 +15,7 @@
       <v-row>
         <v-col cols="3"></v-col>
         <v-col cols="6">
-          <v-carousel show-arrows="hover" cycle hide-delimiter-background height="400">
+          <v-carousel show-arrows="hover" cycle hide-delimiter-background height="auto">
 
             <!-- for文を用いたリファクタリング -->
             <v-carousel-item>
