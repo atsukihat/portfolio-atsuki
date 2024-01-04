@@ -40,34 +40,22 @@
           <v-row>
             <v-spacer></v-spacer>
             <v-col>
-              <v-card
-                @click="updateSelectedImage('/Users/atsuki/Documents/dev/portfolio-atsuki/src/assets/kaede.jpg')"
-              >
-                <v-img
-                src="/Users/atsuki/Documents/dev/portfolio-atsuki/src/assets/kaede.jpg"
-                ></v-img>
+              <v-card @click="updateSelectedImage(kaedeImage)">
+                <v-img :src="kaedeImage"></v-img>
               </v-card>
             </v-col>
             <v-col>
-              <v-card>
-                <v-img
-                src="/Users/atsuki/Documents/dev/portfolio-atsuki/src/assets/logo.png"
-                ></v-img>
+              <v-card @click="updateSelectedImage(logoImage)">
+                <v-img :src="logoImage"></v-img>
               </v-card>
             </v-col>
             <v-col>
-              <v-card>
-                <v-img
-                src="/Users/atsuki/Documents/dev/portfolio-atsuki/src/assets/Higashi.jpg"
-                ></v-img>
+              <v-card @click="updateSelectedImage(higashiImage)">
+                <v-img :src="higashiImage"></v-img>
               </v-card>
             </v-col>
             <v-spacer></v-spacer>
-            <!-- <v-card-actions>
-              <v-btn icon="$close" variant="text" @click="closeDialog"></v-btn>
-            </v-card-actions> -->
           </v-row>
-          <!-- 選択された画像の表示 -->
           <v-row>
             <v-col>
               <v-card>
