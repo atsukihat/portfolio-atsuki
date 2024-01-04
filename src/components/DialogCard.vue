@@ -41,7 +41,7 @@
             <v-col>
               <v-hover v-slot:default="{ isHovering, props }">
                 <v-card
-                  :elevation="selectedImage === kaedeImage ? 16 : (isHovering ? 2 : 16)"
+                  :elevation="selectedImage =! kaedeImage ? 2 : (isHovering ? 2 : 10)"
                   @click="updateSelectedImage(kaedeImage)"
                   v-bind="props"
                 >
@@ -50,9 +50,18 @@
               </v-hover>
             </v-col>
             <v-col>
-              <v-card @click="updateSelectedImage(logoImage)">
+              <!-- <v-card @click="updateSelectedImage(logoImage)">
                 <v-img :src="logoImage"></v-img>
-              </v-card>
+              </v-card> -->
+              <v-hover v-slot:default="{ isHovering, props }">
+                <v-card
+                  :elevation="selectedImage === logoImage ? 2 : (isHovering ? 2 : 10)"
+                  @click="updateSelectedImage(logoImage)"
+                  v-bind="props"
+                >
+                  <v-img :src="logoImage"></v-img>
+                </v-card>
+              </v-hover>
             </v-col>
 
             <v-col>
@@ -82,6 +91,7 @@ import kaedeImage from '@/assets/kaede.jpg'
 import logoImage from '@/assets/logo.png'
 import higashiImage from '@/assets/Higashi.jpg'
 
+
 const images = [
   { id: 'kaede', image: kaedeImage },
   { id: 'logo', image: logoImage },
@@ -90,7 +100,6 @@ const images = [
 
 const selectedImage = ref(kaedeImage)
 const selected = ref('kaede')
-
 
 const updateSelectedImage = (imageUrl, imageId) => {
   selectedImage.value = imageUrl
