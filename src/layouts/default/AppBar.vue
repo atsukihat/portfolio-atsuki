@@ -3,13 +3,13 @@
     <v-container class="d-flex align-center">
     <v-spacer></v-spacer>
         <v-hover v-slot:default="{ isHovering, props }">
-          <v-btn href="#about" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="cormorant-font mr-2" variant="text" size="small">About</v-btn>
+          <v-btn href="#about" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="cormorant-font mx-1" variant="text" size="small">About</v-btn>
         </v-hover>
         <v-hover v-slot:default="{ isHovering, props }">
-          <v-btn href="#work" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="cormorant-font mr-2" variant="text" size="small">Works</v-btn>
+          <v-btn href="#work" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="cormorant-font mx-1" variant="text" size="small">Works</v-btn>
         </v-hover>
         <v-hover v-slot:default="{ isHovering, props }">
-          <v-btn href="#skill" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="cormorant-font mr-2" variant="text" size="small">Skills</v-btn>
+          <v-btn href="#skill" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="cormorant-font mx-1" variant="text" size="small">Skills</v-btn>
         </v-hover>
         <v-hover v-slot:default="{ isHovering, props }">
           <v-btn href="#contact" v-bind="props" :class="{ 'on-hover': isHovering }" v-smooth-scroll="{ duration: 1500}" class="cormorant-font" variant="text" size="small">Contact</v-btn>

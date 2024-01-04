@@ -1,18 +1,33 @@
 <template>
-  <v-container fluid  id=work class="bg-blue">
+  <v-container fluid  id=work class="bg-grey-lighten-4">
     <v-container>
-      <v-row class="mt-12">
+      <v-row>
         <v-col cols="12" class="text-center">
-          <p class="vibes-font title-size">Works</p>
+          <p class="cormorant-font title-size">Works</p>
         </v-col>
       </v-row>
       <v-row>
-        <v-col cols="2"><v-card>aa</v-card></v-col>
+        <v-col cols="4" class="text-center">
+          <DialogButton />
+          <p class="ma-8">かえで</p>
+        </v-col>
+        <v-col cols="4" class="text-center">
+          <DialogButton />
+          <p class="ma-8">かえで</p>
+        </v-col>
+        <v-col cols="4" class="text-center">
+          <DialogButton />
+          <p class="ma-8">かえで</p>
+        </v-col>
+        <v-col cols="4" class="text-center">
+          <DialogButton />
+          <p class="ma-8">かえで</p>
+        </v-col>
       </v-row>
     </v-container>
   </v-container>
 </template>
 
 <script setup>
-  //
+  import DialogButton from '@/components/DialogButton'
 </script>
