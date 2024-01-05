@@ -37,45 +37,27 @@
         <v-col cols="8">
           <!-- 画像の一覧 -->
           <v-row>
-            <v-spacer></v-spacer>
-            <v-col>
+          <v-spacer></v-spacer>
+            <!-- 画像の一覧 -->
+            <template v-for="image in images" :key="image.id">
               <v-hover v-slot:default="{ isHovering, props }">
-                <v-card
-                  :elevation="selectedImage =! kaedeImage ? 2 : (isHovering ? 2 : 10)"
-                  @click="updateSelectedImage(kaedeImage)"
-                  v-bind="props"
-                >
-                  <v-img :src="kaedeImage"></v-img>
-                </v-card>
+                <v-col>
+                  <v-card
+                    :elevation="selected === image.id ? 10 : (isHovering ? 2 : 10)"
+                    @click="updateSelectedImage(image.image, image.id)"
+                    v-bind="props"
+                  >
+                    <v-img :src="image.image"></v-img>
+                  </v-card>
+                </v-col>
               </v-hover>
-            </v-col>
-            <v-col>
-              <!-- <v-card @click="updateSelectedImage(logoImage)">
-                <v-img :src="logoImage"></v-img>
-              </v-card> -->
-              <v-hover v-slot:default="{ isHovering, props }">
-                <v-card
-                  :elevation="selectedImage === logoImage ? 2 : (isHovering ? 2 : 10)"
-                  @click="updateSelectedImage(logoImage)"
-                  v-bind="props"
-                >
-                  <v-img :src="logoImage"></v-img>
-                </v-card>
-              </v-hover>
-            </v-col>
+            </template>
 
-            <v-col>
-              <v-card @click="updateSelectedImage(higashiImage)">
-                <v-img :src="higashiImage"></v-img>
-              </v-card>
-            </v-col>
-            <v-spacer></v-spacer>
+          <v-spacer></v-spacer>
           </v-row>
           <v-row>
             <v-col>
-              <v-card>
-                <v-img :src="selectedImage"></v-img>
-              </v-card>
+              <v-img :src="selectedImage"></v-img>
             </v-col>
           </v-row>
         </v-col>
