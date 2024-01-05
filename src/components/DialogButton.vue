@@ -22,6 +22,7 @@
 <script setup>
 import { ref } from 'vue'
 import DialogCard from '@/components/DialogCard'
+import kaedeImage from '@/assets/kaede.jpg'
 
 const dialog = ref(false)
 </script>

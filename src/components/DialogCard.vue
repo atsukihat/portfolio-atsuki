@@ -1,40 +1,50 @@
 <template>
   <v-card>
     <v-container>
-      <v-row>
+      <v-row class="pa-3">
         <!-- 左側 -->
-        <v-col cols="4">
-          <!-- 概要の見出し -->
-          <v-row>
-            <v-col class="text-center">
-              <div class="text-decoration-underline">
-                概要
-              </div>
-            </v-col>
-          </v-row>
-          <!-- 概要の中身 -->
+        <v-col cols="6">
+          <!-- 概要 -->
+          <v-sheet
+            elevation="2"
+            class="pa-4 my-10"
+          >
+            <v-row>
+              <v-col>
+                <div class="text-decoration-underline text-center">
+                  概要
+                </div>
+                <p>広大の学生のための授業レビューサイトです．サービスの提案からシステム開発，ビジコンに参加して資金集めを行いました．</p>
+              </v-col>
+            </v-row>
+          </v-sheet>
+
+          <!-- 使用言語 -->
+          <v-sheet
+            elevation="2"
+            class="pa-4 my-10"
+          >
+            <v-row>
+              <v-col>
+                <div class="text-decoration-underline text-center">
+                  使用言語
+                </div>
+                <p>vue, vuetify, Laravel, docker, firebase, githubActions</p>
+              </v-col>
+            </v-row>
+          </v-sheet>
+          <!-- リンク -->
           <v-row>
             <v-col>
-              <p>広大の学生のための授業レビューサイトです．サービスの提案からシステム開発，ビジコンに参加して資金集めを行いました．</p>
-            </v-col>
-          </v-row>
-          <!-- 使用言語の見出し -->
-          <v-row>
-            <v-col class="text-center">
-              <div class="text-decoration-underline">
-                使用言語
+              <div class="text-decoration-underline text-center">
+                リンク
               </div>
-            </v-col>
-          </v-row>
-          <!-- 使用言語の中身 -->
-          <v-row>
-            <v-col>
-              <p>vue, vuetify, Laravel, docker, firebase, githubActions</p>
+              <v-btn href=""></v-btn>
             </v-col>
           </v-row>
         </v-col>
         <!-- 右側 -->
-        <v-col cols="8">
+        <v-col cols="6">
           <!-- 画像の一覧 -->
           <v-row>
           <v-spacer></v-spacer>
@@ -43,7 +53,7 @@
               <v-hover v-slot:default="{ isHovering, props }">
                 <v-col>
                   <v-card
-                    :elevation="selected === image.id ? 10 : (isHovering ? 2 : 10)"
+                    :elevation="selected === image.id ? 2 : 16"
                     @click="updateSelectedImage(image.image, image.id)"
                     v-bind="props"
                   >
@@ -52,7 +62,6 @@
                 </v-col>
               </v-hover>
             </template>
-
           <v-spacer></v-spacer>
           </v-row>
           <v-row>
@@ -61,6 +70,11 @@
             </v-col>
           </v-row>
         </v-col>
+      </v-row>
+      <v-row justify="center">
+        <v-card-actions>
+          <v-btn icon="$close" variant="text" @click="closeDialog" text="close"></v-btn>
+        </v-card-actions>
       </v-row>
     </v-container>
   </v-card>

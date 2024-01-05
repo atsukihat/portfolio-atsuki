@@ -9,19 +9,19 @@
       <v-row>
         <v-col cols="4" class="text-center">
           <DialogButton />
-          <p class="ma-8">かえで</p>
+          <p class="my-8">かえで</p>
         </v-col>
         <v-col cols="4" class="text-center">
           <DialogButton />
-          <p class="ma-8">かえで</p>
+          <p class="my-8">かえで</p>
         </v-col>
         <v-col cols="4" class="text-center">
           <DialogButton />
-          <p class="ma-8">かえで</p>
+          <p class="my-8">かえで</p>
         </v-col>
         <v-col cols="4" class="text-center">
           <DialogButton />
-          <p class="ma-8">かえで</p>
+          <p class="my-8">かえで</p>
         </v-col>
       </v-row>
     </v-container>
