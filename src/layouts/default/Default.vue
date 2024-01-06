@@ -18,7 +18,7 @@
 .japanese-font {
   font-family: 'Noto Serif Japanese';
 }
-.vibes-font {
+/* .vibes-font {
   font-family: 'Great Vibes';
-}
+} */
 </style>
