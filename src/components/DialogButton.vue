@@ -8,7 +8,7 @@
         class="pa-2"
       >
         <v-img
-          src="/Users/atsuki/Documents/dev/portfolio-atsuki/src/assets/kaede.jpg"
+          :src="kaedeImage"
         ></v-img>
       </v-card>
     </v-hover>
