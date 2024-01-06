@@ -29,5 +29,5 @@
 </template>
 
 <script setup>
-  import DialogButton from '@/components/DialogButton'
+  import DialogButton from '../components/DialogButton'
 </script>
