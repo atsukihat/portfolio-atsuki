@@ -16,20 +16,9 @@
         <v-col cols="3"></v-col>
         <v-col cols="6">
           <v-carousel show-arrows="hover" cycle hide-delimiter-background height="auto">
-
-            <!-- for文を用いたリファクタリング -->
-            <v-carousel-item>
-            <v-img src="/Users/atsuki/Documents/dev/portfolio-atsuki/src/assets/paris.jpg" max-height="400"></v-img>
+            <v-carousel-item v-for="(image, index) in images" :key="index">
+              <v-img :src="image" max-height="400"></v-img>
             </v-carousel-item>
-
-            <v-carousel-item>
-            <v-img src="/Users/atsuki/Documents/dev/portfolio-atsuki/src/assets/presentation.png" max-height="400"></v-img>
-            </v-carousel-item>
-
-            <v-carousel-item>
-            <v-img src="/Users/atsuki/Documents/dev/portfolio-atsuki/src/assets/Higashi.jpg" max-height="400"></v-img>
-            </v-carousel-item>
-
           </v-carousel>
         </v-col>
         <v-col cols="3"></v-col>
@@ -39,5 +28,9 @@
 </template>
 
 <script setup>
-//
+import parisImage from './../assets/paris.jpg'
+import presentationImage from './../assets/presentation.png'
+import higashiImage from './../assets/Higashi.jpg'
+
+const images = [parisImage, presentationImage, higashiImage]
 </script>

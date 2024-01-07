@@ -15,9 +15,9 @@
 .cormorant-font {
   font-family: 'Cormorant';
 }
-.japanese-font {
+/* .japanese-font {
   font-family: 'Noto Serif Japanese';
-}
+} */
 /* .vibes-font {
   font-family: 'Great Vibes';
 } */

@@ -8,7 +8,7 @@
         class="pa-2"
       >
         <v-img
-          src="/Users/atsuki/Documents/dev/portfolio-atsuki/src/assets/kaede.jpg"
+          :src="kaedeImage"
         ></v-img>
       </v-card>
     </v-hover>
@@ -21,7 +21,8 @@
 
 <script setup>
 import { ref } from 'vue'
-import DialogCard from '@/components/DialogCard'
+import DialogCard from './../components/DialogCard'
+import kaedeImage from './../assets/kaede.jpg'
 
 const dialog = ref(false)
 </script>
