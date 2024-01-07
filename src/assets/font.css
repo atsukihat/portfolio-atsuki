@@ -10,7 +10,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url('./assets/fonts/NotoSerifJP-Regular.ttf') format('woff');
+  src: url('./assets/fonts/NotoSerifJP-Regular.otf') format('woff');
 }
 @font-face {
   font-family: 'Great Vibes';
