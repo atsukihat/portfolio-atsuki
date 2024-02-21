@@ -12,6 +12,6 @@
 }
 
 .title-size {
-  font-size: 2rem; /* または適切なサイズ */
+  font-size: 4rem; /* または適切なサイズ */
 }
 </style>
