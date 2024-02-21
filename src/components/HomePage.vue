@@ -1,19 +1,35 @@
 <template>
-  <v-container id="home">
+  <v-container id="home" fluid class="bg-primary">
     <v-row justify="center" align="center">
       <v-col class="text-center">
-        <p class="animated-text name-size cormorant-font"  style="margin-top: 330px;">ATSUKI&numsp;HATTORI</p>
-        <p class="animated-text occupation-size cormorant-font text-grey-darken-1 mb-16">ENGINEER</p>
-        <v-btn href="#about" v-smooth-scroll="{ duration: 1500}" class="animated-btn mt-16" color="white" icon="mdi mdi-arrow-down" size="x-large" elevation="2" style="margin-bottom: 240px;"></v-btn>
+        <p
+          class="animated-text name-size cormorant-font mt-"
+          style="margin-top: 330px"
+        >
+          ATSUKI&numsp;HATTORI
+        </p>
+        <p
+          class="animated-text occupation-size cormorant-font text-grey-darken-1 mb-16"
+        >
+          ENGINEER
+        </p>
+        <v-btn
+          href="#about"
+          v-smooth-scroll="{ duration: 1500 }"
+          class="animated-btn mt-16"
+          color="white"
+          icon="mdi mdi-arrow-down"
+          size="x-large"
+          elevation="2"
+          style="margin-bottom: 240px"
+        ></v-btn>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
-
-
 <script setup>
-  //
+//
 </script>
 
 <style scoped>
@@ -49,6 +65,6 @@
 
 .animated-btn {
   opacity: 0;
-  animation: popUp 1.5s ease-in-out 1.0s forwards;
+  animation: popUp 1.5s ease-in-out 1s forwards;
 }
 </style>
