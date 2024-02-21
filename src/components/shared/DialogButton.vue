@@ -7,9 +7,7 @@
         v-bind="props"
         class="pa-2"
       >
-        <v-img
-          :src="kaedeImage"
-        ></v-img>
+        <v-img :src="kaedeImage"></v-img>
       </v-card>
     </v-hover>
 
@@ -20,9 +18,9 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
-import DialogCard from './../components/DialogCard'
-import kaedeImage from './../assets/kaede.jpg'
+import { ref } from "vue";
+import DialogCard from "./DialogCard";
+import kaedeImage from "./../../assets/kaede.jpg";
 
-const dialog = ref(false)
+const dialog = ref(false);
 </script>
