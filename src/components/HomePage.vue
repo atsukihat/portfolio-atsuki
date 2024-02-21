@@ -1,19 +1,45 @@
 <template>
-  <v-container id="home">
-    <v-row justify="center" align="center">
-      <v-col class="text-center">
-        <p class="animated-text name-size cormorant-font"  style="margin-top: 330px;">ATSUKI&numsp;HATTORI</p>
-        <p class="animated-text occupation-size cormorant-font text-grey-darken-1 mb-16">ENGINEER</p>
-        <v-btn href="#about" v-smooth-scroll="{ duration: 1500}" class="animated-btn mt-16" color="white" icon="mdi mdi-arrow-down" size="x-large" elevation="2" style="margin-bottom: 240px;"></v-btn>
+  <v-container
+    id="home"
+    fluid
+    class="bg-primary"
+    :style="{ width: width + 'px', height: height + 'px' }"
+  >
+    <v-row justify="center" style="height: 100%">
+      <v-col class="text-center" align-self="center">
+        <v-row>
+          <v-col align-self="center">
+            <p class="animated-text name-size cormorant-font mt-">
+              ATSUKI&numsp;HATTORI
+            </p>
+            <p class="animated-text cormorant-font text-grey-darken-1 mb-16">
+              ENGINEER
+            </p>
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col align-self="end">
+            <v-btn
+              href="#about"
+              v-smooth-scroll="{ duration: 1500 }"
+              class="animated-btn"
+              color="white"
+              icon="mdi mdi-arrow-down"
+              size="x-large"
+              elevation="2"
+            ></v-btn>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
-
-
 <script setup>
-  //
+import { ref, onMounted } from "vue";
+import { useWindowSize } from "@/composables/useWindowSize";
+
+const { width, height } = useWindowSize();
 </script>
 
 <style scoped>
@@ -49,6 +75,6 @@
 
 .animated-btn {
   opacity: 0;
-  animation: popUp 1.5s ease-in-out 1.0s forwards;
+  animation: popUp 1.5s ease-in-out 1s forwards;
 }
 </style>
