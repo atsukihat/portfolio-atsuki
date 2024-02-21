@@ -5,14 +5,14 @@
     class="bg-primary"
     :style="{ width: width + 'px', height: height + 'px' }"
   >
-    <v-row justify="center" style="height: 100%">
+    <v-row style="height: 100%">
       <v-col class="text-center" align-self="center">
         <v-row>
-          <v-col align-self="center">
-            <p class="animated-text name-size cormorant-font mt-">
+          <v-col>
+            <p class="animated-text name-size cormorant-font mt-16">
               ATSUKI&numsp;HATTORI
             </p>
-            <p class="animated-text cormorant-font text-grey-darken-1 mb-16">
+            <p class="animated-text cormorant-font text-grey-darken-1 mb-10">
               ENGINEER
             </p>
           </v-col>
