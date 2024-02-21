@@ -37,19 +37,9 @@
 
 <script setup>
 import { ref, onMounted } from "vue";
+import { useWindowSize } from "@/composables/useWindowSize";
 
-const width = ref(window.innerWidth);
-const height = ref(window.innerHeight);
-
-onMounted(() => {
-  width.value = window.innerWidth;
-  height.value = window.innerHeight;
-
-  window.addEventListener("resize", () => {
-    width.value = window.innerWidth;
-    height.value = window.innerHeight;
-  });
-});
+const { width, height } = useWindowSize();
 </script>
 
 <style scoped>

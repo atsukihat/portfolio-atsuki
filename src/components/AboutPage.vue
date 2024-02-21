@@ -35,9 +35,9 @@
 </template>
 
 <script setup>
-import parisImage from "./../assets/paris.jpg";
-import presentationImage from "./../assets/presentation.png";
-import higashiImage from "./../assets/Higashi.jpg";
+import parisImage from "@/assets/paris.jpg";
+import presentationImage from "@//assets/presentation.png";
+import higashiImage from "@//assets/Higashi.jpg";
 
 const images = [parisImage, presentationImage, higashiImage];
 </script>

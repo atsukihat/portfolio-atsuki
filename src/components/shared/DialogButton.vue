@@ -19,8 +19,8 @@
 
 <script setup>
 import { ref } from "vue";
-import DialogCard from "./DialogCard";
-import kaedeImage from "./../../assets/kaede.jpg";
+import DialogCard from "@/components/shared/DialogCard";
+import kaedeImage from "@//assets/kaede.jpg";
 
 const dialog = ref(false);
 </script>
