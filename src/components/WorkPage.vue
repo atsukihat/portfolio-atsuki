@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid  id=work class="bg-grey-lighten-4">
+  <v-container fluid id="work" class="bg-third">
     <v-container>
       <v-row>
         <v-col cols="12" class="text-center">
@@ -29,5 +29,5 @@
 </template>
 
 <script setup>
-  import DialogButton from '../components/DialogButton'
+import DialogButton from "../components/shared/DialogButton";
 </script>
