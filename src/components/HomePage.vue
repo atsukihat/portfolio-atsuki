@@ -5,16 +5,21 @@
     class="bg-primary"
     :style="{ width: width + 'px', height: height + 'px' }"
   >
-    <v-row justify="center" style="height: 100%">
+    <v-row style="height: 100%">
       <v-col class="text-center" align-self="center">
-        <v-row>
-          <v-col align-self="center">
-            <p class="animated-text name-size cormorant-font mt-">
-              ATSUKI&numsp;HATTORI
-            </p>
-            <p class="animated-text cormorant-font text-grey-darken-1 mb-16">
-              ENGINEER
-            </p>
+        <v-row class="fill-height" align="center" justify="center">
+          <v-col class="d-flex justify-center align-center">
+            <!-- "A" を画像で置き換え -->
+            <v-img
+              :src="nameImg"
+              class="animated-text mt-10"
+              max-height="60"
+              max-width="60"
+            ></v-img>
+            <!-- 残りのテキスト -->
+            <span class="animated-text name-size cormorant-font mt-16"
+              >TSUKI&numsp;HATTORI</span
+            >
           </v-col>
         </v-row>
         <v-row>
@@ -38,6 +43,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useWindowSize } from "@/composables/useWindowSize";
+import nameImg from "@/assets/favicon_ver2_transparent.png";
 
 const { width, height } = useWindowSize();
 </script>
