@@ -15,10 +15,12 @@
         <v-row style="height: 25%">
           <v-col align-self="center" class="text-center">
             <p>福岡県出身のエンジニア</p>
-            <p>
-              高校を卒業後、広島大学情報科学部に入学。その後、広島大学大学院先進理工系科学研究科に進学。
+            <p class="py-2">
+              高校を卒業後、広島大学情報科学部に入学。その後、同大学の大学院に進学。
             </p>
-            <p></p>
+            <p>
+              学生時代は、個人開発や大学の研究員として複数のアプリ開発を経験。
+            </p>
           </v-col>
         </v-row>
         <v-row style="height: 60%">
@@ -43,7 +45,7 @@
 <script setup>
 import parisImage from "@/assets/paris.jpg";
 import presentationImage from "@//assets/presentation.png";
-import higashiImage from "@//assets/Higashi.jpg";
+import higashiImage from "@/assets/Higashi.jpg";
 import { useWindowSize } from "@/composables/useWindowSize";
 import PageTitle from "@/components/shared/PageTitle";
 
