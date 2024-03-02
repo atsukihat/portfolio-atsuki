@@ -12,7 +12,7 @@
             <!-- "A" を画像で置き換え -->
             <v-img
               :src="nameImg"
-              class="animated-img mt-14"
+              class="mt-14"
               max-height="45"
               max-width="45"
             ></v-img>
@@ -22,7 +22,7 @@
             </span>
             <v-img
               :src="nameImg"
-              class="animated-img mt-14"
+              class="mt-14"
               max-height="45"
               max-width="45"
             ></v-img>
@@ -92,15 +92,15 @@ const { width, height } = useWindowSize();
 }
 
 .animated-text {
-  animation: floatUp 2s ease-in-out;
+  animation: floatUp 3s ease-in-out;
 }
 
 .animated-img {
-  animation: floatUp 0.1s ease-in-out;
+  animation: floatUp 0.1s ease-in;
 }
 
 .animated-btn {
   opacity: 0;
-  animation: popUp 2s ease-in-out 1s forwards;
+  animation: popUp 2.7s ease-in-out 1s forwards;
 }
 </style>

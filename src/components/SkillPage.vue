@@ -1,7 +1,7 @@
 <template>
   <v-container
     fluid
-    id="about"
+    id="skills"
     class="bg-forth"
     :style="{ width: width + 'px', height: height + 'px' }"
   >
