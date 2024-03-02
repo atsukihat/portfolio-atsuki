@@ -5,7 +5,7 @@
     color="transparent"
     elevation="0"
     scroll-behavior="inverted hide"
-    scroll-threshold=""
+    scroll-threshold="700"
   >
     <v-container class="d-flex align-center">
       <v-spacer></v-spacer>
