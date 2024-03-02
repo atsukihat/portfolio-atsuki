@@ -35,7 +35,7 @@
       </v-hover>
       <v-hover v-slot:default="{ isHovering, props }">
         <v-btn
-          href="#skill"
+          href="#skills"
           v-bind="props"
           :class="{ 'on-hover': isHovering }"
           v-smooth-scroll="{ duration: 1500 }"

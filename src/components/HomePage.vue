@@ -12,14 +12,30 @@
             <!-- "A" を画像で置き換え -->
             <v-img
               :src="nameImg"
-              class="animated-text mt-10"
-              max-height="60"
-              max-width="60"
+              class="mt-14"
+              max-height="45"
+              max-width="45"
             ></v-img>
             <!-- 残りのテキスト -->
             <span class="animated-text name-size cormorant-font mt-16"
-              >TSUKI&numsp;HATTORI</span
+              >TSUKI&numsp;H
+            </span>
+            <v-img
+              :src="nameImg"
+              class="mt-14"
+              max-height="45"
+              max-width="45"
+            ></v-img>
+            <span class="animated-text name-size cormorant-font mt-16">
+              TTORI</span
             >
+          </v-col>
+        </v-row>
+        <v-row>
+          <v-col>
+            <p class="animated-text cormorant-font text-grey-darken-1 mb-8">
+              ENGINEER
+            </p>
           </v-col>
         </v-row>
         <v-row>
@@ -76,11 +92,15 @@ const { width, height } = useWindowSize();
 }
 
 .animated-text {
-  animation: floatUp 1.5s ease-in-out;
+  animation: floatUp 3s ease-in-out;
+}
+
+.animated-img {
+  animation: floatUp 0.1s ease-in;
 }
 
 .animated-btn {
   opacity: 0;
-  animation: popUp 1.5s ease-in-out 1s forwards;
+  animation: popUp 2.7s ease-in-out 1s forwards;
 }
 </style>
