@@ -1,8 +1,8 @@
 <template>
   <v-card>
-    <v-row class="ma-1">
+    <v-row class="ma-2">
       <v-col cols="5">
-        <v-sheet border rounded class="pa-2 mt-3">
+        <v-sheet border rounded class="pa-1 mt-3">
           <v-row>
             <v-col>
               <div class="text-decoration-underline text-center">概要</div>
@@ -11,16 +11,16 @@
           </v-row>
         </v-sheet>
 
-        <v-sheet border rounded class="pa-2 my-4">
+        <v-sheet border rounded class="pa-1 my-4">
           <v-row>
             <v-col>
               <div class="text-decoration-underline text-center">使用技術</div>
-              <p class="mt-3">{{ languagesDescription }}</p>
+              <p class="mt-3 text-center">{{ languagesDescription }}</p>
             </v-col>
           </v-row>
         </v-sheet>
 
-        <v-sheet border rounded class="pa-4">
+        <v-sheet border rounded class="pa-2">
           <v-row>
             <v-col>
               <div class="text-decoration-underline text-center">リンク</div>
@@ -30,6 +30,7 @@
                   color="light-blue"
                   :href="link.url"
                   target="_blank"
+                  class="mt-3"
                 >
                   <v-icon left>{{ link.icon }}</v-icon>
                   {{ link.text }}
@@ -43,11 +44,12 @@
       <!-- Dynamic Images -->
       <v-col cols="7">
         <v-row>
+          <v-spacer></v-spacer>
           <template v-for="(image, index) in images" :key="`image-${index}`">
             <v-hover v-slot:default="{ isHovering, props }">
               <v-col>
                 <v-card
-                  :elevation="isHovering ? 12 : 2"
+                  :elevation="selected === image.id ? 2 : 10"
                   @click="updateSelectedImage(image.image, image.id)"
                   v-bind="props"
                 >
@@ -56,6 +58,7 @@
               </v-col>
             </v-hover>
           </template>
+          <v-spacer></v-spacer>
         </v-row>
         <v-row>
           <v-col>
