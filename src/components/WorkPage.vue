@@ -60,6 +60,7 @@ import kaedeHeadingImage from "@/assets/kaede_login.png";
 import KaedeLoginImage from "@/assets/kaede_login.png";
 import KaedeSearchImage from "@/assets/kaede_search.png";
 import KaedeReviewImage from "@/assets/kaede_review.png";
+import kaedeProfileImage from "@/assets/kaede_profile.png";
 import PortfolioHeadingImage from "@/assets/portfolio.png";
 import PortfolioHomeImage from "@/assets/portfolio_home.png";
 import PortfolioAboutImage from "@/assets/portfolio_about.png";
@@ -71,7 +72,7 @@ const { width, height } = useWindowSize();
 // かえでの内容の変数
 const kaedeShowDialog = ref(false);
 const kaedeOverviewDescription =
-  "研究室のメンバーと開発した広島大学の授業レビューサイトです。広島大学の";
+  "研究室のメンバーと開発した広島大学の授業レビューサイトです。私の所属していた情報科学部が新設であったため、授業に関する情報が少なく苦労したため開発しました。";
 const kaedeLanguagesDescription =
   "vue, vuetify, Laravel, mysql, docker, githubActions";
 const kaedeLinks = [
@@ -86,6 +87,7 @@ const kaedeImages = [
   { id: "login", image: KaedeLoginImage },
   { id: "search", image: KaedeSearchImage },
   { id: "review", image: KaedeReviewImage },
+  { id: "profile", image: kaedeProfileImage },
 ];
 
 // ポートフォリオの内容の変数

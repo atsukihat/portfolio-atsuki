@@ -1,8 +1,8 @@
 <template>
   <v-card>
-    <v-row class="pa-2">
-      <v-col cols="4">
-        <v-sheet border rounded class="pa-4 mt-10">
+    <v-row class="ma-1">
+      <v-col cols="5">
+        <v-sheet border rounded class="pa-2 mt-3">
           <v-row>
             <v-col>
               <div class="text-decoration-underline text-center">概要</div>
@@ -11,7 +11,7 @@
           </v-row>
         </v-sheet>
 
-        <v-sheet border rounded class="pa-4 my-10">
+        <v-sheet border rounded class="pa-2 my-4">
           <v-row>
             <v-col>
               <div class="text-decoration-underline text-center">使用技術</div>
@@ -30,7 +30,6 @@
                   color="light-blue"
                   :href="link.url"
                   target="_blank"
-                  class="mb-2"
                 >
                   <v-icon left>{{ link.icon }}</v-icon>
                   {{ link.text }}
@@ -42,7 +41,7 @@
       </v-col>
 
       <!-- Dynamic Images -->
-      <v-col cols="8">
+      <v-col cols="7">
         <v-row>
           <template v-for="(image, index) in images" :key="`image-${index}`">
             <v-hover v-slot:default="{ isHovering, props }">
@@ -51,14 +50,12 @@
                   :elevation="isHovering ? 12 : 2"
                   @click="updateSelectedImage(image.image, image.id)"
                   v-bind="props"
-                  class="mx-2"
                 >
                   <v-img :src="image.image"></v-img>
                 </v-card>
               </v-col>
             </v-hover>
           </template>
-          <v-spacer></v-spacer>
         </v-row>
         <v-row>
           <v-col>
@@ -67,7 +64,7 @@
         </v-row>
       </v-col>
     </v-row>
-    <v-row justify="center">
+    <v-row justify="center" no-gutters>
       <v-card-actions>
         <v-btn
           icon="$close"
