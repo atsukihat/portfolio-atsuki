@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid id="contact" class="bg-indigo">
+  <v-container fluid id="contact" class="bg-primary">
     <v-row>
       <v-col>
         <v-container>

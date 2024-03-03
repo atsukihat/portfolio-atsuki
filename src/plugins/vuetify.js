@@ -20,7 +20,7 @@ export default createVuetify({
           primary: "FFFFFF",
           secondary: "F7F7F7",
           third: "EEEEEE",
-          fourth: "112D4E",
+          fourth: "929AAB",
         },
       },
     },

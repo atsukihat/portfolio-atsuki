@@ -14,7 +14,7 @@
         <v-sheet border rounded class="pa-4 my-10">
           <v-row>
             <v-col>
-              <div class="text-decoration-underline text-center">使用言語</div>
+              <div class="text-decoration-underline text-center">使用技術</div>
               <p class="mt-3">{{ languagesDescription }}</p>
             </v-col>
           </v-row>
@@ -26,7 +26,8 @@
               <div class="text-decoration-underline text-center">リンク</div>
               <template v-for="(link, index) in links" :key="index">
                 <v-btn
-                  color="primary"
+                  variant="text"
+                  color="light-blue"
                   :href="link.url"
                   target="_blank"
                   class="mb-2"
