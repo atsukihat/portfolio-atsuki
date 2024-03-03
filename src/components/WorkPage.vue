@@ -2,7 +2,7 @@
   <v-container
     fluid
     id="work"
-    class="bg-white"
+    class="bg-indigo"
     :style="{ width: width + 'px', height: height + 'px' }"
   >
     <v-row style="height: 100%">
@@ -14,7 +14,7 @@
         </v-row>
         <v-container>
           <v-row style="height: 85%">
-            <v-col cols="6" class="text-center">
+            <v-col cols="6" class="text-center px-16">
               <DialogButton
                 :show-dialog="kaedeShowDialog"
                 :overview-description="kaedeOverviewDescription"
@@ -33,12 +33,6 @@
               <p class="my-8">かえで</p>
             </v-col>
             <v-col cols="6" class="text-center">
-              <p class="my-8">かえで</p>
-            </v-col>
-            <v-col cols="4" class="text-center">
-              <p class="my-8">かえで</p>
-            </v-col>
-            <v-col cols="4" class="text-center">
               <p class="my-8">かえで</p>
             </v-col>
           </v-row>
@@ -61,7 +55,7 @@ const { width, height } = useWindowSize();
 
 // かえでの内容の変数
 const kaedeShowDialog = ref(false);
-const kaedeOverviewDescription = "広大の学生のための授業レビューサイトです。";
+const kaedeOverviewDescription = "広島大学の授業レビューサイトを作成しました。";
 const kaedeLanguagesDescription =
   "vue, vuetify, Laravel, docker, firebase, githubActions";
 const kaedeLinks = [

@@ -2,43 +2,42 @@
   <v-card>
     <v-row class="pa-3">
       <v-col cols="6">
-        <!-- Dynamic Overview -->
-        <v-sheet elevation="2" class="pa-4 my-10">
+        <v-sheet border rounded class="pa-4 my-10">
           <v-row>
             <v-col>
               <div class="text-decoration-underline text-center">概要</div>
-              <p>{{ overviewDescription }}</p>
+              <p class="mt-3">{{ overviewDescription }}</p>
             </v-col>
           </v-row>
         </v-sheet>
 
-        <!-- Dynamic Languages -->
-        <v-sheet elevation="2" class="pa-4 my-10">
+        <v-sheet border rounded class="pa-4 my-10">
           <v-row>
             <v-col>
               <div class="text-decoration-underline text-center">使用言語</div>
-              <p>{{ languagesDescription }}</p>
+              <p class="mt-3">{{ languagesDescription }}</p>
             </v-col>
           </v-row>
         </v-sheet>
 
-        <!-- Dynamic Links -->
-        <v-row>
-          <v-col>
-            <div class="text-decoration-underline text-center">リンク</div>
-            <template v-for="(link, index) in links" :key="index">
-              <v-btn
-                color="primary"
-                :href="link.url"
-                target="_blank"
-                class="mb-2"
-              >
-                <v-icon left>{{ link.icon }}</v-icon>
-                {{ link.text }}
-              </v-btn>
-            </template>
-          </v-col>
-        </v-row>
+        <v-sheet border rounded class="pa-4">
+          <v-row>
+            <v-col>
+              <div class="text-decoration-underline text-center">リンク</div>
+              <template v-for="(link, index) in links" :key="index">
+                <v-btn
+                  color="primary"
+                  :href="link.url"
+                  target="_blank"
+                  class="mb-2"
+                >
+                  <v-icon left>{{ link.icon }}</v-icon>
+                  {{ link.text }}
+                </v-btn>
+              </template>
+            </v-col>
+          </v-row>
+        </v-sheet>
       </v-col>
 
       <!-- Dynamic Images -->
