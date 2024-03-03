@@ -3,17 +3,19 @@
     <default-bar />
 
     <default-view />
+    <app-footer />
   </v-app>
 </template>
 
 <script setup>
-  import DefaultBar from './AppBar.vue'
-  import DefaultView from './View.vue'
+import DefaultBar from "./AppBar.vue";
+import DefaultView from "./View.vue";
+import AppFooter from "./AppFooter.vue";
 </script>
 
 <style>
 .cormorant-font {
-  font-family: 'Cormorant';
+  font-family: "Cormorant";
 }
 /* .japanese-font {
   font-family: 'Noto Serif Japanese';

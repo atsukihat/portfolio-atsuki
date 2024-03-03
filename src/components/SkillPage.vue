@@ -83,7 +83,7 @@ const belowSkills = [
   {
     name: "Vue.js",
     image: VueImg,
-    years: "6ヶ月",
+    years: "1年間",
     purpose: "フロントエンド開発",
   },
   {
