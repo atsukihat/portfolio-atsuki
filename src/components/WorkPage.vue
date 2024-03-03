@@ -26,8 +26,17 @@
               />
               <p class="my-8">かえで</p>
             </v-col>
-            <v-col cols="6" class="text-center">
-              <p class="my-8">かえで</p>
+            <v-col cols="6" class="text-center px-16">
+              <DialogButton
+                :show-dialog="portfolioShowDialog"
+                :overview-description="portfolioOverviewDescription"
+                :languages-description="portfolioLanguagesDescription"
+                :links="portfolioLinks"
+                :heading-image="portfolioHeadeingImage"
+                :images="portfolioImages"
+                @update:showDialog="portfolioShowDialog = $event"
+              />
+              <p class="my-8">ポートフォリオ</p>
             </v-col>
             <v-col cols="6" class="text-center">
               <p class="my-8">かえで</p>
@@ -47,9 +56,14 @@ import { ref } from "vue";
 import { useWindowSize } from "@/composables/useWindowSize";
 import DialogButton from "../components/shared/DialogButton";
 import PageTitle from "@/components/shared/PageTitle";
-import KaedeImage from "@/assets/kaede.jpg";
-import kaedeHeadingImage from "@/assets/kaede.jpg";
-import PortfolioImage from "@/assets/portfolio.jpg";
+import kaedeHeadingImage from "@/assets/kaede_login.png";
+import KaedeLoginImage from "@/assets/kaede_login.png";
+import KaedeSearchImage from "@/assets/kaede_search.png";
+import KaedeReviewImage from "@/assets/kaede_review.png";
+import PortfolioHeadingImage from "@/assets/portfolio.png";
+import PortfolioHomeImage from "@/assets/portfolio_home.png";
+import PortfolioAboutImage from "@/assets/portfolio_about.png";
+import PortfolioSkillsImage from "@/assets/portfolio_skills.png";
 import ParisImage from "@/assets/paris.jpg";
 
 const { width, height } = useWindowSize();
@@ -59,7 +73,7 @@ const kaedeShowDialog = ref(false);
 const kaedeOverviewDescription =
   "研究室のメンバーと開発した広島大学の授業レビューサイトです。広島大学の";
 const kaedeLanguagesDescription =
-  "vue, vuetify, Laravel, mysql, docker, githubActions, ";
+  "vue, vuetify, Laravel, mysql, docker, githubActions";
 const kaedeLinks = [
   {
     url: "https://hirodai-kaede.com/",
@@ -68,7 +82,11 @@ const kaedeLinks = [
   },
 ];
 const kaedeHeadeingImage = kaedeHeadingImage;
-const kaedeImages = [{ id: "kaede", image: KaedeImage }];
+const kaedeImages = [
+  { id: "login", image: KaedeLoginImage },
+  { id: "search", image: KaedeSearchImage },
+  { id: "review", image: KaedeReviewImage },
+];
 
 // ポートフォリオの内容の変数
 const portfolioShowDialog = ref(false);
@@ -82,9 +100,10 @@ const portfolioLinks = [
     text: "サイトへ",
   },
 ];
-const portfolioHeadeingImage = kaedeHeadingImage;
+const portfolioHeadeingImage = PortfolioHeadingImage;
 const portfolioImages = [
-  { id: "kaede", image: KaedeImage },
-  { id: "paris", image: ParisImage },
+  { id: "home", image: PortfolioHomeImage },
+  { id: "about", image: PortfolioAboutImage },
+  { id: "skill", image: PortfolioSkillsImage },
 ];
 </script>

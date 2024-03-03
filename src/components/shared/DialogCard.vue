@@ -1,8 +1,8 @@
 <template>
   <v-card>
-    <v-row class="pa-3">
-      <v-col cols="6">
-        <v-sheet border rounded class="pa-4 my-10">
+    <v-row class="pa-2">
+      <v-col cols="4">
+        <v-sheet border rounded class="pa-4 mt-10">
           <v-row>
             <v-col>
               <div class="text-decoration-underline text-center">概要</div>
@@ -42,7 +42,7 @@
       </v-col>
 
       <!-- Dynamic Images -->
-      <v-col cols="6">
+      <v-col cols="8">
         <v-row>
           <template v-for="(image, index) in images" :key="`image-${index}`">
             <v-hover v-slot:default="{ isHovering, props }">
@@ -51,7 +51,7 @@
                   :elevation="isHovering ? 12 : 2"
                   @click="updateSelectedImage(image.image, image.id)"
                   v-bind="props"
-                  class="ma-2"
+                  class="mx-2"
                 >
                   <v-img :src="image.image"></v-img>
                 </v-card>
