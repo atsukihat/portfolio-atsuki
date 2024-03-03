@@ -15,7 +15,15 @@
         <v-container>
           <v-row style="height: 85%">
             <v-col cols="6" class="text-center">
-              <DialogButton />
+              <DialogButton
+                :show-dialog="kaedeShowDialog"
+                :overview-description="kaedeOverviewDescription"
+                :languages-description="kaedeLanguagesDescription"
+                :links="kaedeLinks"
+                :heading-image="kaedeHeadeingImage"
+                :images="kaedeImages"
+                @update:showDialog="kaedeShowDialog = $event"
+              />
               <p class="my-8">かえで</p>
             </v-col>
             <v-col cols="6" class="text-center">
@@ -41,9 +49,27 @@
 </template>
 
 <script setup>
-import DialogButton from "../components/shared/DialogButton";
-import PageTitle from "@/components/shared/PageTitle";
+import { ref } from "vue";
 import { useWindowSize } from "@/composables/useWindowSize";
+import DialogButton from "../components/shared/DialogButton";
+import KaedeImage from "@/assets/kaede.jpg";
+import kaedeHeadingImage from "@/assets/kaede.jpg";
+import ParisImage from "@/assets/paris.jpg";
+import PageTitle from "@/components/shared/PageTitle";
 
 const { width, height } = useWindowSize();
+
+// かえでの内容の変数
+const kaedeShowDialog = ref(false);
+const kaedeOverviewDescription = "広大の学生のための授業レビューサイトです。";
+const kaedeLanguagesDescription =
+  "vue, vuetify, Laravel, docker, firebase, githubActions";
+const kaedeLinks = [
+  { url: "https://example.com", icon: "mdi-web", text: "Visit Website" },
+];
+const kaedeHeadeingImage = kaedeHeadingImage;
+const kaedeImages = [
+  { id: "kaede", image: KaedeImage },
+  { id: "paris", image: ParisImage },
+];
 </script>
