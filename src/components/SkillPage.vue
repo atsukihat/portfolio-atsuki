@@ -2,7 +2,7 @@
   <v-container
     fluid
     id="skills"
-    class="bg-forth"
+    class="bg-secondary"
     :style="{ width: width + 'px', height: height + 'px' }"
   >
     <v-row style="height: 100%">
@@ -23,7 +23,7 @@
               lg="4"
               xl="4"
               align-self="center"
-              class="text-center mt-3"
+              class="text-center my-5"
             >
               <SkillCard :skill="skill" />
             </v-col>
@@ -61,7 +61,7 @@ const Skills = [
   {
     name: "Docker",
     image: DockerImg,
-    years: "6ヶ月",
+    years: "1年間",
     purpose: "開発環境構築",
   },
   {
@@ -73,7 +73,7 @@ const Skills = [
   {
     name: "Vue.js",
     image: VueImg,
-    years: "1年間",
+    years: "6ヶ月",
     purpose: "フロントエンド開発",
   },
   {
