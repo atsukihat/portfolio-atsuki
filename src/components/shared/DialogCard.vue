@@ -1,114 +1,109 @@
 <template>
   <v-card>
-    <v-container>
-      <v-row class="pa-3">
-        <!-- 左側 -->
-        <v-col cols="6">
-          <!-- 概要 -->
-          <v-sheet
-            elevation="2"
-            class="pa-4 my-10"
-          >
-            <v-row>
-              <v-col>
-                <div class="text-decoration-underline text-center">
-                  概要
-                </div>
-                <p>広大の学生のための授業レビューサイトです．サービスの提案からシステム開発，ビジコンに参加して資金集めを行いました．</p>
-              </v-col>
-            </v-row>
-          </v-sheet>
+    <v-row class="ma-2">
+      <v-col cols="5">
+        <v-sheet border rounded class="pa-1 mt-3">
+          <v-row>
+            <v-col>
+              <div class="text-decoration-underline text-center">概要</div>
+              <p class="mt-3">{{ overviewDescription }}</p>
+            </v-col>
+          </v-row>
+        </v-sheet>
 
-          <!-- 使用言語 -->
-          <v-sheet
-            elevation="2"
-            class="pa-4 my-10"
-          >
-            <v-row>
+        <v-sheet border rounded class="pa-1 my-4">
+          <v-row>
+            <v-col>
+              <div class="text-decoration-underline text-center">使用技術</div>
+              <p class="mt-3 text-center">{{ languagesDescription }}</p>
+            </v-col>
+          </v-row>
+        </v-sheet>
+
+        <v-sheet border rounded class="pa-2">
+          <v-row>
+            <v-col>
+              <div class="text-decoration-underline text-center">リンク</div>
+              <template v-for="(link, index) in links" :key="index">
+                <v-btn
+                  variant="text"
+                  color="light-blue"
+                  :href="link.url"
+                  target="_blank"
+                  class="mt-3"
+                >
+                  <v-icon left>{{ link.icon }}</v-icon>
+                  {{ link.text }}
+                </v-btn>
+              </template>
+            </v-col>
+          </v-row>
+        </v-sheet>
+      </v-col>
+
+      <!-- Dynamic Images -->
+      <v-col cols="7">
+        <v-row>
+          <v-spacer></v-spacer>
+          <template v-for="(image, index) in images" :key="`image-${index}`">
+            <v-hover v-slot:default="{ isHovering, props }">
               <v-col>
-                <div class="text-decoration-underline text-center">
-                  使用言語
-                </div>
-                <p>vue, vuetify, Laravel, docker, firebase, githubActions</p>
+                <v-card
+                  :elevation="selected === image.id ? 2 : 10"
+                  @click="updateSelectedImage(image.image, image.id)"
+                  v-bind="props"
+                >
+                  <v-img :src="image.image"></v-img>
+                </v-card>
               </v-col>
-            </v-row>
-          </v-sheet>
-          <!-- リンク -->
-          <v-row>
-            <v-col>
-              <div class="text-decoration-underline text-center">
-                リンク
-              </div>
-              <v-btn href=""></v-btn>
-            </v-col>
-          </v-row>
-        </v-col>
-        <!-- 右側 -->
-        <v-col cols="6">
-          <!-- 画像の一覧 -->
-          <v-row>
+            </v-hover>
+          </template>
           <v-spacer></v-spacer>
-            <!-- 画像の一覧 -->
-            <template v-for="image in images" :key="image.id">
-              <v-hover v-slot:default="{ isHovering, props }">
-                <v-col>
-                  <v-card
-                    :elevation="selected === image.id ? 2 : 16"
-                    @click="updateSelectedImage(image.image, image.id)"
-                    v-bind="props"
-                  >
-                    <v-img :src="image.image"></v-img>
-                  </v-card>
-                </v-col>
-              </v-hover>
-            </template>
-          <v-spacer></v-spacer>
-          </v-row>
-          <v-row>
-            <v-col>
-              <v-img :src="selectedImage"></v-img>
-            </v-col>
-          </v-row>
-        </v-col>
-      </v-row>
-      <v-row justify="center">
-        <v-card-actions>
-          <v-btn icon="$close" variant="text" @click="closeDialog" text="close"></v-btn>
-        </v-card-actions>
-      </v-row>
-    </v-container>
+        </v-row>
+        <v-row>
+          <v-col>
+            <v-img :src="selectedImage"></v-img>
+          </v-col>
+        </v-row>
+      </v-col>
+    </v-row>
+    <v-row justify="center" no-gutters>
+      <v-card-actions>
+        <v-btn
+          icon="$close"
+          variant="text"
+          @click="closeDialog"
+          text="close"
+        ></v-btn>
+      </v-card-actions>
+    </v-row>
   </v-card>
 </template>
 
 <script setup>
-import { defineProps, defineEmits } from 'vue'
-import { ref } from 'vue'
-import kaedeImage from '@/assets/kaede.jpg'
-import logoImage from '@/assets/logo.png'
-import higashiImage from '@/assets/Higashi.jpg'
+import { defineProps, defineEmits } from "vue";
+import { ref } from "vue";
 
+// Props for dynamic content
+const props = defineProps({
+  showDialog: Boolean,
+  overviewDescription: String,
+  languagesDescription: String,
+  links: Array,
+  images: Array,
+});
 
-const images = [
-  { id: 'kaede', image: kaedeImage },
-  { id: 'logo', image: logoImage },
-  { id: 'higashi', image: higashiImage }
-]
-
-const selectedImage = ref(kaedeImage)
-const selected = ref('kaede')
+const selectedImage = ref(props.images[0].image);
+const selected = ref(props.images[0].id);
 
 const updateSelectedImage = (imageUrl, imageId) => {
-  selectedImage.value = imageUrl
-  selected.value = imageId
-}
+  selectedImage.value = imageUrl;
+  selected.value = imageId;
+};
 
-const props = defineProps({
-  showDialog: Boolean
-})
-
-const emits = defineEmits(['update:showDialog'])
+const emits = defineEmits(["update:showDialog"]);
 
 const closeDialog = () => {
-  emits('update:showDialog', false)
-}
+  emits("update:showDialog", false);
+};
 </script>

@@ -5,7 +5,7 @@
     color="transparent"
     elevation="0"
     scroll-behavior="inverted hide"
-    scroll-threshold=""
+    scroll-threshold="700"
   >
     <v-container class="d-flex align-center">
       <v-spacer></v-spacer>
@@ -35,7 +35,7 @@
       </v-hover>
       <v-hover v-slot:default="{ isHovering, props }">
         <v-btn
-          href="#skill"
+          href="#skills"
           v-bind="props"
           :class="{ 'on-hover': isHovering }"
           v-smooth-scroll="{ duration: 1500 }"
