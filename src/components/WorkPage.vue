@@ -2,7 +2,7 @@
   <v-container
     fluid
     id="work"
-    class="bg-indigo"
+    class="bg-white"
     :style="{ width: width + 'px', height: height + 'px' }"
   >
     <v-row style="height: 100%">
@@ -14,20 +14,23 @@
         </v-row>
         <v-container>
           <v-row style="height: 85%">
-            <v-col cols="4" class="text-center">
+            <v-col cols="6" class="text-center">
               <DialogButton />
               <p class="my-8">かえで</p>
             </v-col>
-            <v-col cols="4" class="text-center">
-              <DialogButton />
+            <v-col cols="6" class="text-center">
+              <p class="my-8">かえで</p>
+            </v-col>
+            <v-col cols="6" class="text-center">
+              <p class="my-8">かえで</p>
+            </v-col>
+            <v-col cols="6" class="text-center">
               <p class="my-8">かえで</p>
             </v-col>
             <v-col cols="4" class="text-center">
-              <DialogButton />
               <p class="my-8">かえで</p>
             </v-col>
             <v-col cols="4" class="text-center">
-              <DialogButton />
               <p class="my-8">かえで</p>
             </v-col>
           </v-row>
