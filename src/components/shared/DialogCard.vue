@@ -1,7 +1,7 @@
 <template>
   <v-card>
     <v-row class="ma-2">
-      <v-col cols="5">
+      <v-col cols="12" sm="12" md="5" lg="5" xl="5">
         <v-sheet border rounded class="pa-1 mt-3">
           <v-row>
             <v-col>
@@ -42,7 +42,7 @@
       </v-col>
 
       <!-- Dynamic Images -->
-      <v-col cols="7">
+      <v-col cols="12" sm="12" md="7" lg="7" xl="7">
         <v-row>
           <v-spacer></v-spacer>
           <template v-for="(image, index) in images" :key="`image-${index}`">
