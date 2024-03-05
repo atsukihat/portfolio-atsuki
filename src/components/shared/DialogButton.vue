@@ -5,6 +5,8 @@
       @click="openDialog"
       v-bind="props"
       class="pa-2"
+      max-width="450"
+      max-height="400"
     >
       <v-img :src="headingImage"></v-img>
     </v-card>
@@ -44,3 +46,4 @@ const updateDialog = (newState) => {
   dialog.value = newState;
 };
 </script>
+>
