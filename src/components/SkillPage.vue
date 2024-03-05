@@ -12,23 +12,21 @@
             <PageTitle>Skills</PageTitle>
           </v-col>
         </v-row>
-        <v-container>
-          <v-row style="height: 85%">
-            <v-col
-              v-for="(skill, index) in Skills"
-              :key="index"
-              cols="6"
-              sm="6"
-              md="6"
-              lg="4"
-              xl="4"
-              align-self="center"
-              class="text-center my-5"
-            >
-              <SkillCard :skill="skill" />
-            </v-col>
-          </v-row>
-        </v-container>
+        <v-row style="height: 85%">
+          <v-col
+            v-for="(skill, index) in Skills"
+            :key="index"
+            cols="4"
+            sm="4"
+            md="4"
+            lg="4"
+            xl="4"
+            align-self="center"
+            class="text-center my-5"
+          >
+            <SkillCard :skill="skill" />
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>

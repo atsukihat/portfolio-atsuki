@@ -12,58 +12,56 @@
             <PageTitle>Works</PageTitle>
           </v-col>
         </v-row>
-        <v-container>
-          <v-row style="height: 90%" class="py-4">
-            <v-col cols="6" class="text-center px-16">
-              <DialogButton
-                :show-dialog="kaedeShowDialog"
-                :overview-description="kaedeOverviewDescription"
-                :languages-description="kaedeLanguagesDescription"
-                :links="kaedeLinks"
-                :heading-image="kaedeHeadeingImage"
-                :images="kaedeImages"
-                @update:showDialog="kaedeShowDialog = $event"
-              />
-              <p class="my-4">かえで（広島大学授業レビューサイト）</p>
-            </v-col>
-            <v-col cols="6" class="text-center px-16">
-              <DialogButton
-                :show-dialog="portfolioShowDialog"
-                :overview-description="portfolioOverviewDescription"
-                :languages-description="portfolioLanguagesDescription"
-                :links="portfolioLinks"
-                :heading-image="portfolioHeadeingImage"
-                :images="portfolioImages"
-                @update:showDialog="portfolioShowDialog = $event"
-              />
-              <p class="my-4">ポートフォリオ</p>
-            </v-col>
-            <v-col cols="6" class="text-center px-16">
-              <DialogButton
-                :show-dialog="UDShowDialog"
-                :overview-description="UDOverviewDescription"
-                :languages-description="UDLanguagesDescription"
-                :links="UDLinks"
-                :heading-image="UDHeadeingImage"
-                :images="UDImages"
-                @update:showDialog="UDShowDialog = $event"
-              />
-              <p class="my-4">UD-book（音声教材システム）</p>
-            </v-col>
-            <v-col cols="6" class="text-center px-16">
-              <DialogButton
-                :show-dialog="scrapingShowDialog"
-                :overview-description="scrapingOverviewDescription"
-                :languages-description="scrapingLanguagesDescription"
-                :links="scrapingLinks"
-                :heading-image="scrapingHeadeingImage"
-                :images="scrapingImages"
-                @update:showDialog="scrapingShowDialog = $event"
-              />
-              <p class="my-4">スクレイピング（TA採点自動化プログラム）</p>
-            </v-col>
-          </v-row>
-        </v-container>
+        <v-row style="height: 90%" class="py-4">
+          <v-col cols="6" align-self="center" class="text-center pl-16">
+            <DialogButton
+              :show-dialog="kaedeShowDialog"
+              :overview-description="kaedeOverviewDescription"
+              :languages-description="kaedeLanguagesDescription"
+              :links="kaedeLinks"
+              :heading-image="kaedeHeadeingImage"
+              :images="kaedeImages"
+              @update:showDialog="kaedeShowDialog = $event"
+            />
+            <p class="my-4">かえで（広島大学授業レビューサイト）</p>
+          </v-col>
+          <v-col cols="6" align-self="center" class="text-center pr-16">
+            <DialogButton
+              :show-dialog="portfolioShowDialog"
+              :overview-description="portfolioOverviewDescription"
+              :languages-description="portfolioLanguagesDescription"
+              :links="portfolioLinks"
+              :heading-image="portfolioHeadeingImage"
+              :images="portfolioImages"
+              @update:showDialog="portfolioShowDialog = $event"
+            />
+            <p class="my-4">ポートフォリオ</p>
+          </v-col>
+          <v-col cols="6" align-self="center" class="text-center pl-16">
+            <DialogButton
+              :show-dialog="UDShowDialog"
+              :overview-description="UDOverviewDescription"
+              :languages-description="UDLanguagesDescription"
+              :links="UDLinks"
+              :heading-image="UDHeadeingImage"
+              :images="UDImages"
+              @update:showDialog="UDShowDialog = $event"
+            />
+            <p class="my-4">UD-book（音声教材システム）</p>
+          </v-col>
+          <v-col cols="6" align-self="center" class="text-center pr-16">
+            <DialogButton
+              :show-dialog="scrapingShowDialog"
+              :overview-description="scrapingOverviewDescription"
+              :languages-description="scrapingLanguagesDescription"
+              :links="scrapingLinks"
+              :heading-image="scrapingHeadeingImage"
+              :images="scrapingImages"
+              @update:showDialog="scrapingShowDialog = $event"
+            />
+            <p class="my-4">スクレイピング（TA採点自動化プログラム）</p>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>
