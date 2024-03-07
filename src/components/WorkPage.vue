@@ -104,6 +104,11 @@ const kaedeLinks = [
     text: "サイトへ",
   },
   {
+    url: "https://github.com/YamamotoNagito/l10dev",
+    icon: "mdi-github",
+    text: "Github",
+  },
+  {
     url: "https://hirodai-kaede.com/",
     icon: "mdi-web",
     text: "ビジネスコンテスト詳細",
