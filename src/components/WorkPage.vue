@@ -94,7 +94,7 @@ const { width, height } = useWindowSize();
 // かえでの内容の変数
 const kaedeShowDialog = ref(false);
 const kaedeOverviewDescription =
-  "研究室のメンバーと開発した広島大学の授業レビューサイトです。企画から資金集め、開発まで全て行いました。リーダーとしてビジネスコンテストにも出場しました！";
+  "研究室のメンバーと開発した広島大学の授業レビューサイトです。企画から資金集め、開発まで全て行いました。リーダーとしてビジネスコンテストにも出場し、40万円の予算も確保しました！";
 const kaedeLanguagesDescription =
   "vue, vuetify, Laravel, mysql, docker, GithubActions";
 const kaedeLinks = [
