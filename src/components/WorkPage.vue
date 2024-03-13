@@ -109,7 +109,7 @@ const kaedeLinks = [
     text: "Github",
   },
   {
-    url: "https://hirodai-kaede.com/",
+    url: "https://www.hiroshima-u.ac.jp/iagcc/news/80635",
     icon: "mdi-web",
     text: "ビジネスコンテスト詳細",
   },
