@@ -59,13 +59,13 @@ const Skills = [
   {
     name: "Docker",
     image: DockerImg,
-    years: "1年間",
+    years: "1年6ヶ月",
     purpose: "開発環境構築",
   },
   {
     name: "Django",
     image: DjangoImg,
-    years: "1年間",
+    years: "1年6ヶ月",
     purpose: "Webアプリケーション開発",
   },
   {
@@ -77,7 +77,7 @@ const Skills = [
   {
     name: "MySQL",
     image: MysqlImg,
-    years: "6ヶ月",
+    years: "1年6ヶ月",
     purpose: "データベース設計",
   },
 ];

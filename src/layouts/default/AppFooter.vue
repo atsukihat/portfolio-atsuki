@@ -11,9 +11,11 @@ import zennIcon from "@/components/icons/ZennIcon.vue";
           <a href="https://zenn.dev/atsukihat" target="_blank">
             <v-icon large color="black" :icon="zennIcon"></v-icon>
           </a>
-          <a href="https://x.com/atsukihat" target="_blank">
+
+          <a href="https://x.com/atsukihat" target="_blank" class="mx-3">
             <v-icon large color="black">mdi-twitter</v-icon>
           </a>
+
           <a href="https://github.com/atsukihat" target="_blank">
             <v-icon large color="black">mdi-github</v-icon>
           </a>
