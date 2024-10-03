@@ -39,5 +39,3 @@ jobs:
             また提出されたコードが特に問題がない場合は、最後にPRの作成者を褒めちぎってください。基本的に語尾はにゃんでお願いします。
           top_p: 1
           temperature: 1
-          max_tokens: 2048
-          MAX_PATCH_LENGTH: 2048
