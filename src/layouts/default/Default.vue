@@ -15,7 +15,7 @@ import AppFooter from "./AppFooter.vue";
 
 <style>
 .cormorant-font {
-  font-family: "Cormorant";
+  font-family: serif;
 }
 /* .japanese-font {
   font-family: 'Noto Serif Japanese';
