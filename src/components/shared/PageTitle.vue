@@ -8,7 +8,7 @@
 
 <style scoped>
 .cormorant-font {
-  font-family: "Cormorant", serif;
+  font-family: serif;
 }
 
 .title-size {

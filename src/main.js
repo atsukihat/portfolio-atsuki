@@ -5,20 +5,18 @@
  */
 
 // Plugins
-import { registerPlugins } from '@/plugins'
+import { registerPlugins } from "@/plugins";
 
 // Components
-import App from './App.vue'
-
-import './assets/font.css'
+import App from "./App.vue";
 
 // Composables
-import { createApp } from 'vue'
-import VueSmoothScroll from 'vue3-smooth-scroll'
+import { createApp } from "vue";
+import VueSmoothScroll from "vue3-smooth-scroll";
 
-const app = createApp(App)
-app.use(VueSmoothScroll)
+const app = createApp(App);
+app.use(VueSmoothScroll);
 
-registerPlugins(app)
+registerPlugins(app);
 
-app.mount('#app')
+app.mount("#app");
