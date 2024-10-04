@@ -21,7 +21,7 @@
                 <v-icon left>mdi-email</v-icon>
                 Send Me
               </v-btn>
-              <p class="my-4">Send an email to me: atsukih46@gmail.com</p>
+              <p class="my-4">Send an email to me: ahattori46@gmail.com</p>
             </v-col>
           </v-row>
         </v-container>
@@ -31,10 +31,7 @@
 </template>
 
 <script setup>
-import { useWindowSize } from "@/composables/useWindowSize";
 import PageTitle from "@/components/shared/PageTitle";
-
-const { width, height } = useWindowSize();
 
 function sendEmail() {
   window.location.href = "mailto:atsukih46@gmail.com";
