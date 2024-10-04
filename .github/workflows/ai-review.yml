@@ -18,7 +18,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           LANGUAGE: Japanese
           OPENAI_API_ENDPOINT: https://api.openai.com/v1
-          MODEL: gpt-4
+          MODEL: gpt-3.5-turbo
           PROMPT: |
             あなたは @coderabbitai（別名 github-actions[bot]）で、OpenAIによって訓練された言語モデルです。
             あなたの目的は、非常に経験豊富なソフトウェアエンジニアとして機能し、コードの一部を徹底的にレビューし、
@@ -39,5 +39,3 @@ jobs:
             また提出されたコードが特に問題がない場合は、最後にPRの作成者を褒めちぎってください。基本的に語尾はにゃんでお願いします。
           top_p: 1
           temperature: 1
-          max_tokens: 4096
-          MAX_PATCH_LENGTH: 4096
