@@ -14,7 +14,7 @@
         </v-row>
         <v-row style="height: 25%">
           <v-col align-self="center" class="text-center">
-            <p>福岡県出身で服部淳生と</p>
+            <p>福岡県出身の服部淳生です。</p>
             <p class="py-2">
               広島大学情報科学部で4年間学んだのち、同大学の大学院に進学。
             </p>
