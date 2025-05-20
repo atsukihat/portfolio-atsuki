@@ -4,7 +4,7 @@
       <v-col>
         <v-container>
           <v-row>
-            <v-col v-col align-self="center" class="text-center">
+            <v-col align-self="center" class="text-center">
               <PageTitle>Contact Me</PageTitle>
             </v-col>
           </v-row>
@@ -34,6 +34,6 @@
 import PageTitle from "@/components/shared/PageTitle";
 
 function sendEmail() {
-  window.location.href = "mailto:atsukih46@gmail.com";
+  window.location.href = "mailto:ahattori46@gmail.com";
 }
 </script>

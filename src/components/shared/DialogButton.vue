@@ -1,27 +1,29 @@
 <template>
-  <v-hover v-slot:default="{ isHovering, props }" open-delay="100">
-    <v-card
-      :elevation="isHovering ? 16 : 2"
-      @click="openDialog"
-      v-bind="props"
-      class="mx-auto"
-      max-width="450"
-      max-height="400"
-    >
-      <v-img :src="headingImage"></v-img>
-    </v-card>
-  </v-hover>
+  <div>
+    <v-hover v-slot:default="{ isHovering, props }" open-delay="100">
+      <v-card
+        :elevation="isHovering ? 16 : 2"
+        @click="openDialog"
+        v-bind="props"
+        class="mx-auto"
+        max-width="450"
+        max-height="400"
+      >
+        <v-img :src="headingImage"></v-img>
+      </v-card>
+    </v-hover>
 
-  <v-dialog v-model="dialog" max-width="1000">
-    <DialogCard
-      :show-dialog="dialog"
-      :overview-description="overviewDescription"
-      :languages-description="languagesDescription"
-      :links="links"
-      :images="images"
-      @update:showDialog="updateDialog"
-    />
-  </v-dialog>
+    <v-dialog v-model="dialog" max-width="1000">
+      <DialogCard
+        :show-dialog="dialog"
+        :overview-description="overviewDescription"
+        :languages-description="languagesDescription"
+        :links="links"
+        :images="images"
+        @update:showDialog="updateDialog"
+      />
+    </v-dialog>
+  </div>
 </template>
 
 <script setup>
@@ -34,9 +36,13 @@ const props = defineProps({
   languagesDescription: String,
   links: Array,
   images: Array,
+  showDialog: {
+    type: Boolean,
+    default: false
+  }
 });
 
-const dialog = ref(false);
+const dialog = ref(props.showDialog);
 
 const openDialog = () => {
   dialog.value = true;
@@ -46,4 +52,3 @@ const updateDialog = (newState) => {
   dialog.value = newState;
 };
 </script>
->
