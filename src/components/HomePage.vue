@@ -41,7 +41,7 @@
         <v-row>
           <v-col align-self="end">
             <v-btn
-              href="about"
+              href="#about"
               v-smooth-scroll="{ duration: 1500 }"
               class="animated-btn"
               color="white"
