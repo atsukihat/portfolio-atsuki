@@ -9,7 +9,7 @@
             </v-col>
           </v-row>
           <v-row justify="center" class="my-4">
-            <v-col cols="12" md="10" lg="8" class="text-center">
+            <v-col cols="12" md="8" class="text-center">
               <p class="mb-6">最後までご覧いただきありがとうございました。このサイトを通して、私のことを少しでも知っていただけたのなら嬉しいです。もしこのサイトや私について何かコメントがありましたら、下記のSNSまでご連絡ください。</p>
             </v-col>
           </v-row>
