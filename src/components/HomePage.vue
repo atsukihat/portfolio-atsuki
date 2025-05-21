@@ -34,7 +34,7 @@
         <v-row>
           <v-col>
             <p class="animated-text cormorant-font text-grey-darken-1 mb-8">
-              ENGINEER
+              Product Manager
             </p>
           </v-col>
         </v-row>

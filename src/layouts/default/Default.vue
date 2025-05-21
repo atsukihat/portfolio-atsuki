@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <default-bar />
+    <default-bar :current-section="currentSection" />
 
     <default-view />
     <app-footer />
@@ -11,6 +11,9 @@
 import DefaultBar from "./AppBar.vue";
 import DefaultView from "./View.vue";
 import AppFooter from "./AppFooter.vue";
+import { useScrollPosition } from "@/composables/useScrollPosition";
+
+const { currentSection } = useScrollPosition();
 </script>
 
 <style>
