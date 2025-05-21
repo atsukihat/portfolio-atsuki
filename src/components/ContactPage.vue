@@ -8,20 +8,34 @@
               <PageTitle>Contact Me</PageTitle>
             </v-col>
           </v-row>
-          <v-row justify="center">
-            <v-col cols="12" md="6">
-              <p>
-                最後までご覧いただきありがとうございました。このサイトを通して、私のことを少しでも知っていただけたのなら嬉しいです。もしこのサイトや私について何かコメントがありましたら、下記のメールアドレスまでご連絡ください。
-              </p>
-            </v-col>
-          </v-row>
           <v-row justify="center" class="my-8">
-            <v-col cols="4" class="text-center">
-              <v-btn variant="outlined" @click="sendEmail">
-                <v-icon left>mdi-email</v-icon>
-                Send Me
-              </v-btn>
-              <p class="my-4">Send an email to me: ahattori46@gmail.com</p>
+            <v-col class="text-center">
+              <div class="d-flex justify-center gap-6">
+                <a
+                  href="https://zenn.dev/atsukihat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon"
+                >
+                  <v-icon size="x-large" color="black" :icon="zennIcon"></v-icon>
+                </a>
+                <a
+                  href="https://x.com/atsukihat"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon mx-4"
+                >
+                  <v-icon size="x-large" color="black">mdi-twitter</v-icon>
+                </a>
+                <a
+                  href="https://github.com/amoon46"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="social-icon"
+                >
+                  <v-icon size="x-large" color="black">mdi-github</v-icon>
+                </a>
+              </div>
             </v-col>
           </v-row>
         </v-container>
@@ -32,8 +46,14 @@
 
 <script setup>
 import PageTitle from "@/components/shared/PageTitle";
-
-function sendEmail() {
-  window.location.href = "mailto:ahattori46@gmail.com";
-}
+import zennIcon from "@/components/icons/ZennIcon.vue";
 </script>
+
+<style scoped>
+.social-icon {
+  transition: transform 0.3s ease;
+}
+.social-icon:hover {
+  transform: scale(1.2);
+}
+</style>
