@@ -23,7 +23,7 @@
                   class="social-icon"
                 >
                   <v-avatar class="social-circle" color="white" size="60">
-                    <v-icon size="large" color="black">mdi-twitter</v-icon>
+                    <XIcon class="custom-icon" />
                   </v-avatar>
                 </a>
                 <a
@@ -43,7 +43,7 @@
                   class="social-icon"
                 >
                   <v-avatar class="social-circle" color="white" size="60">
-                    <v-icon size="large" color="black">mdi-instagram</v-icon>
+                    <InstagramIcon class="custom-icon" />
                   </v-avatar>
                 </a>
                 <a
@@ -68,6 +68,8 @@
 <script setup>
 import PageTitle from "@/components/shared/PageTitle";
 import zennIcon from "@/components/icons/ZennIcon.vue";
+import XIcon from "@/components/icons/XIcon.vue";
+import InstagramIcon from "@/components/icons/InstagramIcon.vue";
 </script>
 
 <style scoped>
@@ -82,5 +84,9 @@ import zennIcon from "@/components/icons/ZennIcon.vue";
 .social-circle {
   border: 1px solid rgba(0, 0, 0, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+.custom-icon {
+  width: 30px;
+  height: 30px;
 }
 </style>
