@@ -53,7 +53,7 @@
                   class="social-icon"
                 >
                   <v-avatar class="social-circle" color="white" size="60">
-                    <v-icon size="large" color="black" :icon="zennIcon"></v-icon>
+                    <ZennIcon class="custom-icon" />
                   </v-avatar>
                 </a>
               </div>
@@ -67,7 +67,7 @@
 
 <script setup>
 import PageTitle from "@/components/shared/PageTitle";
-import zennIcon from "@/components/icons/ZennIcon.vue";
+import ZennIcon from "@/components/icons/ZennIcon.vue";
 import XIcon from "@/components/icons/XIcon.vue";
 import InstagramIcon from "@/components/icons/InstagramIcon.vue";
 </script>
