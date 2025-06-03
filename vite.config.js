@@ -14,7 +14,7 @@ function removeEotPreload() {
     transformIndexHtml(html) {
       // eotフォントのpreloadタグを除去
       return html.replace(
-        /<link rel="preload" as="font" type="font\/eot"[^>]*>/g,
+        /<link rel="preload" as="font" (type="font\/eot"|type="application\/vnd\.ms-fontobject")[^>]*>|<link rel="preload" as="font" href="[^"]+\.eot"[^>]*>/g,
         ""
       );
     },
